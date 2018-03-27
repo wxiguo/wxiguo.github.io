@@ -28,4 +28,4 @@ branches:
 
 env:
     global:
-        - GH_REF: git@github.com:wxiguo/wxiguo.github.io.git
+        - GH_REF: github.com/wxiguo/wxiguo.github.io.git
