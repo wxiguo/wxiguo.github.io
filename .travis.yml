@@ -1,26 +1,23 @@
-language: node_js  #设置语言
-
-node_js: stable  #设置相应的版本
-
+language: node_js # 设置语言
+node_js: stable # 设置相应版本
+cache:
+    apt: true
+    directories:
+        - node_modules # 缓存不经常更改的内容
+before_install:
+    - export TZ='Asia/Shanghai' # 更改时区
+    - npm install hexo-cli -g
+    - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限
 install:
-  - npm install  #安装hexo及插件
-
+    - npm install # 安装hexo及插件
 script:
-  - hexo cl  #清除
-  - hexo g  #生成
-
+    - hexo clean # 清除
+    - hexo g # 生成
 after_script:
-  - cd ./public
-  - git init
-  - git config user.name "wxiguo"  #修改name
-  - git config user.email "wxq9375@gmail.com"  #修改email
-  - git add .
-  - git commit -m "update"
-  - git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master:master  #REPO_TOKEN是在Travis中配置token的名称
-
+    - ./publish-to-gh-pages.sh
 branches:
-  only:
-    - dev  #只监测dev分支
+    only:
+        - dev # 只监测dev分支
 env:
- global:
-   - GH_REF: git@github.com:wxiguo/wxiguo.github.io.git  #设置GH_REF
+    global:
+        - GH_REF: git@github.com:wxiguo/wxiguo.github.io.git #设置GH_REF，注意更改成自己的仓库地址
