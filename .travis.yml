@@ -1,25 +1,26 @@
-language: node_js
-node_js:
-- "4"  # nodejs的版本
+language: node_js  #设置语言
+
+node_js: stable  #设置相应的版本
+
+install:
+  - npm install  #安装hexo及插件
+
+script:
+  - hexo cl  #清除
+  - hexo g  #生成
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "wxiguo"  #修改name
+  - git config user.email "wxq9375@gmail.com"  #修改email
+  - git add .
+  - git commit -m "update"
+  - git push --force --quiet "https://${REPO_TOKEN}@${GH_REF}" master:master  #REPO_TOKEN是在Travis中配置token的名称
+
 branches:
   only:
-  - dev  # 设置自动化部署的源码分支
-before_install:
-- export TZ='Asia/Shanghai'  # 设置时区
-- npm install -g hexo
-- npm install -g hexo-cli
-before_script:
-# 设置github账户信息
-- git config --global user.name "wxiguo" #设置github用户名
-- git config --global user.email wxiguo9375@gmail.com #设置github用户邮箱
-# 安装依赖组件
-install:
-- npm install
-# 执行的命令
-script:
-- hexo clean
-- hexo generate
-# 执行的成功后执行 
-after_success:
-- hexo deploy
-- git push --quiet --force https://$REPO_TOKEN@git@github.com:wxiguo/wxiguo.github.io.git
+    - dev  #只监测dev分支
+env:
+ global:
+   - GH_REF: git@github.com:wxiguo/wxiguo.github.io.git  #设置GH_REF
