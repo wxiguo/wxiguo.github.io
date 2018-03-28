@@ -24,7 +24,7 @@ after_script:
 
 branches:
     only:
-        - dev
+        - hexo
 
 env:
     global:
