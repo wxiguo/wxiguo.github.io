@@ -84,9 +84,6 @@ deploy:
   repo: git@github.com:wxiguo/wxiguo.github.io.git #github仓库地址
   branch: master #github分支
 
-# avatar 个人头像
-avatar: /images/avatar.gif
-
 search:
   path: search.xml
   field: post
