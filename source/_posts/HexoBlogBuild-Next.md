@@ -26,7 +26,7 @@ description: hexo博客搭建及next主题设置
 
 ### 创建仓库
 
-> GitHub仓库名称必须是 \<yourname>.github.io
+> GitHub仓库名称必须是 <yourname\>.github.io
 
 ### 配置SSH
 
@@ -44,7 +44,7 @@ $ git config --global user.email "你的GitHub注册邮箱"
 $ ssh-keygen -t rsa -C "你的GitHub注册邮箱"
 ```
 
-一路回车，创建的文件windows 10系统在`C:\Users\windows用户\.ssh`，里面有新创建的私钥： **id_rsa** 和公钥： **id_rsa.pub**。
+一路回车，创建的文件windows 10系统在`C:\Users\windows用户\.ssh`，里面有新创建的私钥：**id_rsa**和公钥：**id_rsa.pub**。
 
 3. 点击**GitHub用户头像**-->**Setting**-->**SSH and GPG keys**-->**New SSH key**，将公钥 **id_rsa.pub** 中的内容复制到**key**文本框中点击保存。
 4. 测试SSH：
