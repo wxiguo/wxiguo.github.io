@@ -35,9 +35,7 @@ description: Travis持续集成自动部署Hexo
 
 ![Travis](/images/GitHubPages-Travis-3.png)
 
-在`Environment Variables`创建环境变量`TravisCIToken`值为在GItHub创建的Access Token
-
-的token值。**不要勾选**`Display value in build log`，否则会在日志文件中暴露 `token` 信息。
+在`Environment Variables`创建环境变量`TravisCIToken`值为在GItHub创建的Access Token的token值。**不要勾选**`Display value in build log`，否则会在日志文件中暴露 `token` 信息。
 
 ![Travis](/images/GitHubPages-Travis-4.png)
 
