@@ -8,6 +8,7 @@ categories:
 tags:
     - Java
     - JavaUtils
+    - 邮件
 description: 通过JavaMail实现发送邮件
 ---
 
@@ -52,7 +53,7 @@ import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import cn.com.ylpw.basis.utils.Constants;
+import cn.com.****.basis.utils.Constants;
 import com.sun.mail.util.MailSSLSocketFactory;
 
 /** 
@@ -202,7 +203,7 @@ java.lang.UnsupportedOperationException: Method not yet implemented
     at javax.mail.internet.MimeMessage.<init>(MimeMessage.java:89) ~[geronimo-spec-javamail-1.3.1-rc3.jar:1.3.1-rc3]
     at cn.com.****.basis.utils.JavaMailUtils.sendEmail(JavaMailUtils.java:93) [classes/:na]
     at cn.com.****.basis.utils.JavaMailUtils.sendEmail(JavaMailUtils.java:159) [classes/:na]
-    at cn.com.****.alliance.controller.CreateXmlData.createXmlAll(CreateXmlData.java:174) [classes/:na]
+    at cn.com.****.********.controller.CreateXmlData.createXmlAll(CreateXmlData.java:174) [classes/:na]
     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_75]
     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_75]
     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_75]
