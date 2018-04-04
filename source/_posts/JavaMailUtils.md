@@ -200,9 +200,9 @@ public class JavaMailUtils {
 ```
 java.lang.UnsupportedOperationException: Method not yet implemented
     at javax.mail.internet.MimeMessage.<init>(MimeMessage.java:89) ~[geronimo-spec-javamail-1.3.1-rc3.jar:1.3.1-rc3]
-    at cn.com.ylpw.basis.utils.JavaMailUtils.sendEmail(JavaMailUtils.java:93) [classes/:na]
-    at cn.com.ylpw.basis.utils.JavaMailUtils.sendEmail(JavaMailUtils.java:159) [classes/:na]
-    at cn.com.ylpw.alliance.controller.CreateXmlData.createXmlAll(CreateXmlData.java:174) [classes/:na]
+    at cn.com.****.basis.utils.JavaMailUtils.sendEmail(JavaMailUtils.java:93) [classes/:na]
+    at cn.com.****.basis.utils.JavaMailUtils.sendEmail(JavaMailUtils.java:159) [classes/:na]
+    at cn.com.****.alliance.controller.CreateXmlData.createXmlAll(CreateXmlData.java:174) [classes/:na]
     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_75]
     at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_75]
     at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_75]
