@@ -195,7 +195,7 @@ public class JavaMailUtils {
 ## 异常处理
 
 
-需要注意的是，在本机`junit`测试配置是正常的，但是启动服务后程序异常，日志如下：
+需要注意的是，在本机`junit`测试配置是正常的，但是启动服务后发送邮件程序异常，日志如下：
 
 ```
 java.lang.UnsupportedOperationException: Method not yet implemented
