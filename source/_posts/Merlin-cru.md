@@ -1,7 +1,7 @@
 ---
 title: 梅林固件编写cru脚本清理高速缓存重启路由
 date: 2018-04-08 13:23:10
-updated: 2018-04-08 13:23:10
+updated: 2018-04-12 16:43:18
 top: false
 categories:
     - Merlin
@@ -45,16 +45,6 @@ cru a reboot "0 4 * * * /sbin/reboot"
 
 1. 每4小时清理一次缓存。
 2. 每天临晨4点重启路由器。
-
-重起后有一定几率无法访问网络，配置修改`service-start`脚本：
-
-```
-#!/bin/sh
-sleep 90
-service restart_wan
-```
-
-启动完成后推迟90秒自动重拨WAN。
 
 按下图在路由器管理界面Tools-Script里将`cru.sh`添加到开机启动：
 
