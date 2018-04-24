@@ -54,9 +54,9 @@ cru a reboot "0 4 * * * /sbin/reboot"
 
 配置完成后为安全性考虑，请关闭`SSH`访问链接。
 
-### 修改NTP时间
+### 修改NTP服务器
 
-梅林自带NTP时间地址`pool.ntp.org`在国内访问并不是很好，经常会有访问不了的情况导致时间NTP时间不同步，重启后无法链接WAN的问题，修改NTP服务至`time.pool.aliyun.com`，修改后半个多月了，没有发生重启后无法WAN上网的问题。
+梅林自带NTP服务器地址`pool.ntp.org`在国内访问并不是很好，经常会有访问不了的情况导致时间不同步，重启后无法链接WAN的问题，修改NTP服务器地址为`time.pool.aliyun.com`，修改后半个多月了，没有发生重启后无法WAN上网的问题。
 
 ![Merlin](/images/Merlin-1.png)
 
