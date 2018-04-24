@@ -48,11 +48,17 @@ cru a reboot "0 4 * * * /sbin/reboot"
 
 按下图在路由器管理界面Tools-Script里将`cru.sh`添加到开机启动：
 
-![Merlin](/images/Merlin.png)
+![Merlin](/images/Merlin-0.png)
 
 然后重启机器，或者断开WAN后重连。
 
 配置完成后为安全性考虑，请关闭`SSH`访问链接。
+
+### 修改NTP时间
+
+梅林自带NTP时间地址`pool.ntp.org`在国内访问并不是很好，经常会有访问不了的情况导致时间NTP时间不同步，重启后无法链接WAN的问题，修改NTP服务至`time.pool.aliyun.com`，修改后半个多月了，没有发生重启后无法WAN上网的问题。
+
+![Merlin](/images/Merlin-1.png)
 
 ### 相关参考
 * [梅林系统手动编写cru定时脚本 自动重启/释放内存](http://xow.myds.me:88/emlog/?post=37)
