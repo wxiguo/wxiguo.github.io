@@ -144,12 +144,8 @@ listeners=PLAINTEXT://localhost:9092
 
 ### 相关参考
 
-[Kafka官网](https://kafka.apache.org)
-
-[Kafka维基百科](https://zh.wikipedia.org/wiki/Kafka)
-
-[[Kafka][错误: 找不到或无法加载主类 Files\Java\jdk1.8.0_101\lib\dt.jar;C:\Program]](https://blog.csdn.net/cx2932350/article/details/78870135)
-
-[WARN [Consumer clientId=consumer-1, groupId=console-consumer-950] Connection to node -1 could not be](https://blog.csdn.net/getyouwant/article/details/79000524)
-
-[The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+* [Kafka官网](https://kafka.apache.org)
+* [Kafka维基百科](https://zh.wikipedia.org/wiki/Kafka)
+* [[Kafka][错误: 找不到或无法加载主类 Files\Java\jdk1.8.0_101\lib\dt.jar;C:\Program]](https://blog.csdn.net/cx2932350/article/details/78870135)
+* [WARN [Consumer clientId=consumer-1, groupId=console-consumer-950] Connection to node -1 could not be](https://blog.csdn.net/getyouwant/article/details/79000524)
+* [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
