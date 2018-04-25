@@ -36,14 +36,14 @@ Kafka是一个分布式流处理平台。Kafka于2009年源自Linkedin，随后�
 
 Kafka架构的主要术语包括Topic、Record和Broker。Topic由Record组成，Record持有不同的信息，而Broker则负责复制消息。
 
-####四个核心API
+#### 四个核心API
 
 * 生产者API：支持应用发布Record流。
 * 消费者API：支持应用程序订阅Topic和处理Record流。
 * Stream API：将输入流转换为输出流，并产生结果。
 * Connector API：执行可重用的生产者和消费者API，可将Topic链接到现有应用程序。
 
-![Kafka-apis](..\images\kafka-apis.png)
+![Kafka-apis](/images/kafka-apis.png)
 
 ### 安装及使用
 
