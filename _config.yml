@@ -8,7 +8,7 @@ subtitle: #网站副标题
 description: #网站描述
 keywords:
 author: YiLong #网站作者名字
-language: zh-Hans #网站语言,默认是英语(en)
+language: zh-CN #网站语言,默认是英语(en)
 timezone: #网站时区
 
 # URL 网站设置
@@ -89,3 +89,16 @@ search:
   field: post
   format: html
   limit: 10000
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: RIz00FvgylnHzmWEx9iTsasT-gzGzoHsz
+  app_key: TzKwHyKfqWKyiEa78ELOg9D9
+  username: <<your username>> # Will be asked while deploying if is left blank
+  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
