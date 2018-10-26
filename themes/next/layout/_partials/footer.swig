@@ -41,7 +41,7 @@
   {% set nofollow = ' rel="external nofollow"' %}
 {% endif %}
 
-{% if theme.footer.powered.enable %}
+<!--{% if theme.footer.powered.enable %}
   <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://hexo.io">Hexo</a>') }}{% if theme.footer.powered.version %} v{{ hexo_env('version') }}{% endif %}{#
 #}</div>
@@ -58,7 +58,7 @@
     #}NexT.{{ theme.scheme }}{#
   #}</a>{% if theme.footer.theme.version %} v{{ version }}{% endif %}{#
 #}</div>
-{% endif %}
+{% endif %}-->
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#
