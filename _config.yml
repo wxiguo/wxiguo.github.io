@@ -79,10 +79,10 @@ theme: next #主题名称 默认landscape
 
 # Deployment 部署
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:wxiguo/wxiguo.github.io.git #github仓库地址
-  branch: hexo #github分支
+#deploy:
+#  type: git
+#  repo: git@github.com:wxiguo/wxiguo.github.io.git #github仓库地址
+#  branch: master #github分支
 
 search:
   path: search.xml
