@@ -1,7 +1,7 @@
 ---
 title: Apache kafka（一）简介及入门
 date: 2018-04-25 9:28:40
-updated: 2018-04-25 9:28:40
+updated: 2019-06-26 20:32:40
 top: false
 categories:
     - Apache Kafka
@@ -32,11 +32,11 @@ Kafka是一个分布式流处理平台。Kafka于2009年源自Linkedin，随后�
 * Kafka集群在称为主题的类别中存储记录流。
 * 每个记录由一个键，一个值和一个时间戳组成。
 
-### Kafka的架构
+### Kafka 的架构
 
 Kafka架构的主要术语包括Topic、Record和Broker。Topic由Record组成，Record持有不同的信息，而Broker则负责复制消息。
 
-#### 四个核心API
+#### 四个核心 API
 
 * 生产者API：支持应用发布Record流。
 * 消费者API：支持应用程序订阅Topic和处理Record流。
@@ -55,10 +55,10 @@ Kafka架构的主要术语包括Topic、Record和Broker。Topic由Record组成�
 
 #### 第1步：下载代码
 
-[下载](https://www.apache.org/dyn/closer.cgi?path=/kafka/1.1.0/kafka_2.11-1.1.0.tgz) 1.1.0版本并解压它。Windows平台直接解压。
+[下载](https://www.apache.org/dyn/closer.cgi?path=/kafka/1.1.0/kafka_2.11-2.3.0.tgz) 2.3.0版本并解压它。Windows平台直接解压。
 
 ```
->cd kafka_2.11-1.1.0
+>cd kafka_2.12-2.3.0
 ```
 
 #### 第2步：启动服务器
@@ -76,6 +76,8 @@ ZooKeeper成功启动，并绑定到端口`2181`。该端口是ZooKeeper的默�
 ```
 >bin\windows\kafka-server-start.bat config\server.properties
 ```
+
+> windows环境下启动命令中的配置文件路径 `.properties` 需要 `..\..\xx.properties`。
 
 #### 第3步：创建一个主题
 
@@ -108,6 +110,83 @@ hello,my is producer
 This is a message
 hello,my is producer
 ````
+
+### Kafka 集群配置
+
+1. 配置 Kafka 的 Zookeeper 地址 `zookeeper.connect` 。Zookeeper集群可通过 `,`  分开。
+
+`192.168.1.100` 和 `192.168.1.101` Zookeeper 配置：
+
+```xml
+############################# Zookeeper #############################
+
+# Zookeeper connection string (see zookeeper docs for details).
+# This is a comma separated host:port pairs, each corresponding to a zk
+# server. e.g. "127.0.0.1:3000,127.0.0.1:3001,127.0.0.1:3002".
+# You can also append an optional chroot string to the urls to specify the
+# root directory for all kafka znodes.
+zookeeper.connect=192.168.1.200:2181
+
+# Timeout in ms for connecting to zookeeper
+zookeeper.connection.timeout.ms=6000
+```
+
+2. 修改 `broker.id` ， `broker.id` 在集群中必须是唯一的。
+
+`192.168.1.100` 配置 ：
+
+```xml
+# The id of the broker. This must be set to a unique integer for each broker.
+broker.id=0
+```
+
+`192.168.1.101` 配置：
+
+```xml
+# The id of the broker. This must be set to a unique integer for each broker.
+broker.id=1
+```
+
+3. `listeners` 写入本机IP，集群中完成节点间通讯使用。
+
+`192.168.1.100` 配置：
+
+```xml
+# The address the socket server listens on. It will get the value returned from 
+# java.net.InetAddress.getCanonicalHostName() if not configured.
+#   FORMAT:
+#     listeners = listener_name://host_name:port
+#   EXAMPLE:
+#     listeners = PLAINTEXT://your.host.name:9092
+listeners=PLAINTEXT://192.168.1.100:9092
+```
+
+`192.168.1.101` 配置：
+
+```xml
+# The address the socket server listens on. It will get the value returned from 
+# java.net.InetAddress.getCanonicalHostName() if not configured.
+#   FORMAT:
+#     listeners = listener_name://host_name:port
+#   EXAMPLE:
+#     listeners = PLAINTEXT://your.host.name:9092
+listeners=PLAINTEXT://192.168.1.101:9092
+```
+
+4. 查询 Kafka 集群节点部署情况。
+
+```shell
+>zookeeper-shell.sh 192.168.1.200:2181
+...
+>ls /brokers/ids
+[0, 1]
+>get /controller
+...
+```
+
+`ls /brokers/ids` 查询注册了 `zookeeper` 节点的 `broker.id` 。
+
+`get /controller` 查询 leader，master 节点。
 
 ### 异常及处理
 

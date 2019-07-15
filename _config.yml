@@ -82,7 +82,7 @@ theme: next #主题名称 默认landscape
 deploy:
   type: git
   repo: git@github.com:wxiguo/wxiguo.github.io.git #github仓库地址
-  branch: master #github分支
+  branch: hexo #github分支
 
 search:
   path: search.xml
