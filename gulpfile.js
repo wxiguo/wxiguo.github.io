@@ -96,21 +96,21 @@ gulp.task('compressHtml', function () {
         unprotect: /<script [^>]*\btype="text\/x-handlebars-template"[\s\S]+?<\/script>/ig //特殊处理
     }
     var minOption = {
-        collapseWhitespace: false,           //压缩HTML
-        collapseBooleanAttributes: false,    //省略布尔属性的值  <input checked="true"/> ==> <input />
-        removeEmptyAttributes: false,        //删除所有空格作属性值    <input id="" /> ==> <input />
-        removeScriptTypeAttributes: false,   //删除<script>的type="text/javascript"
-        removeStyleLinkTypeAttributes: false,//删除<style>和<link>的type="text/css"
-        removeComments: false,               //清除HTML注释
-        minifyJS: false,                     //压缩页面JS
-        minifyCSS: false,                    //压缩页面CSS
-        minifyURLs: false                    //替换页面URL
+        collapseWhitespace: true,           //压缩HTML
+        collapseBooleanAttributes: true,    //省略布尔属性的值  <input checked="true"/> ==> <input />
+        removeEmptyAttributes: true,        //删除所有空格作属性值    <input id="" /> ==> <input />
+        removeScriptTypeAttributes: true,   //删除<script>的type="text/javascript"
+        removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
+        removeComments: true,               //清除HTML注释
+        minifyJS: true,                     //压缩页面JS
+        minifyCSS: true,                    //压缩页面CSS
+        minifyURLs: true                    //替换页面URL
    };
     return gulp.src('./public/**/*.html')
         .pipe(gulpif(isDebug,debug({title: 'Compress HTML:'})))
         .pipe(plumber())
         .pipe(htmlclean(cleanOptions))
-        .pipe(htmlmin(minOption))
+//        .pipe(htmlmin(minOption))
         .pipe(gulp.dest('./public'));
 });
 
