@@ -123,8 +123,8 @@ live2d:
     position: left                         # 模型在页面上的位置
     width: 150                             # 模型宽度
     height: 150                            # 模型高度
-    hOffset: 30
-    vOffset: -10
+    hOffset: 30                            # canvas水平偏移 默认值为 0
+    vOffset: -10                           # canvas竖直偏移 默认值为 -20
   mobile:
     show: true                             # 是否在手机端显示
   react:
