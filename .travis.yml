@@ -15,24 +15,9 @@ before_install:
 install:
     - npm install
 
-before_script:
-    - npm install -g gulp
-    - npm install -g gulp-debug
-    - npm install -g gulp-clean-css
-    - npm install -g gulp-uglify
-    - npm install -g gulp-htmlmin
-    - npm install -g gulp-htmlclean
-    - npm install -g gulp-imagemin
-    - npm install -g gulp-changed
-    - npm install -g gulp-if
-    - npm install -g gulp-plumber
-    - npm install -g run-sequence
-    - npm install -g del
-
 script:
     - hexo clean
     - hexo g
-    - gulp
 
 after_script:
     - ./publish-to-gh-pages.sh
