@@ -1,0 +1,35 @@
+anguage: node_js
+
+node_js: stable
+
+cache:
+    apt: true
+    directories:
+        - node_modules
+
+before_install:
+    - export TZ='Asia/Shanghai'
+    - npm install hexo-cli -g
+    - chmod +x ./publish-to-gh-pages.sh
+
+install:
+    - npm install
+
+before_script:
+    - npm install -g gulp
+
+script:
+    - hexo clean
+    - hexo g
+    - gulp
+
+after_script:
+    - ./publish-to-gh-pages.sh
+
+branches:
+    only:
+        - hexo
+
+env:
+    global:
+        - GH_REF: github.com/wxiguo/wxiguo.github.io.git
