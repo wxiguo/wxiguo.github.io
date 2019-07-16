@@ -102,9 +102,9 @@ gulp.task('compressHtml', function () {
         removeScriptTypeAttributes: false,   //删除<script>的type="text/javascript"
         removeStyleLinkTypeAttributes: false,//删除<style>和<link>的type="text/css"
         removeComments: false,               //清除HTML注释
-        minifyJS: true,                     //压缩页面JS
-        minifyCSS: true,                    //压缩页面CSS
-        minifyURLs: true                    //替换页面URL
+        minifyJS: false,                     //压缩页面JS
+        minifyCSS: false,                    //压缩页面CSS
+        minifyURLs: false                    //替换页面URL
    };
     return gulp.src('./public/**/*.html')
         .pipe(gulpif(isDebug,debug({title: 'Compress HTML:'})))
