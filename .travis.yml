@@ -15,9 +15,13 @@ before_install:
 install:
     - npm install
 
+before_script:
+    - npm install -g gulp
+
 script:
     - hexo clean
     - hexo g
+    - gulp
 
 after_script:
     - ./publish-to-gh-pages.sh
