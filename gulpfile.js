@@ -96,7 +96,7 @@ gulp.task('compressHtml', function () {
         unprotect: /<script [^>]*\btype="text\/x-handlebars-template"[\s\S]+?<\/script>/ig //特殊处理
     }
     var minOption = {
-        collapseWhitespace: true,           //压缩HTML
+        collapseWhitespace: false,           //压缩HTML
         collapseBooleanAttributes: true,    //省略布尔属性的值  <input checked="true"/> ==> <input />
         removeEmptyAttributes: true,        //删除所有空格作属性值    <input id="" /> ==> <input />
         removeScriptTypeAttributes: true,   //删除<script>的type="text/javascript"
