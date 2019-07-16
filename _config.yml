@@ -111,7 +111,7 @@ lazyload:
 
 live2d:
   enable: true                             # 开启Live2D
-  scriptFrom: local                        # 插件来源
+  scriptFrom: jsdelivr                     # 插件来源 local：本机 jsdelivr(默认)：CDN
   pluginRootPath: live2dw/                 # 插件根目录(相对路径)
   pluginJsPath: lib/                       # 脚本文件路径(相对于插件根目录路径)
   pluginModelPath: assets/                 # 模型文件路径(相对于插件根目录)
