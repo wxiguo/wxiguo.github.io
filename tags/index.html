@@ -25,7 +25,7 @@
       copy_failure: '复制失败'
     }
   };
-</script><meta property="og:type" content="website"><meta property="og:title" content="标签"><meta property="og:url" content="https://blog.xiguo.wang/tags/index.html"><meta property="og:site_name" content="燚龍"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2019-07-17T01:44:51.636Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="标签"><link rel="alternate" href="/atom.xml" title="燚龍" type="application/atom+xml"><link rel="canonical" href="https://blog.xiguo.wang/tags/"><script id="page.configurations">
+</script><meta property="og:type" content="website"><meta property="og:title" content="标签"><meta property="og:url" content="https://blog.xiguo.wang/tags/index.html"><meta property="og:site_name" content="燚龍"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2019-07-17T01:58:08.892Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="标签"><link rel="alternate" href="/atom.xml" title="燚龍" type="application/atom+xml"><link rel="canonical" href="https://blog.xiguo.wang/tags/"><script id="page.configurations">
   CONFIG.page = {
     sidebar: "",
   };
@@ -78,7 +78,26 @@ show_date_time();
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
-</script><script color="255,255,255" opacity="0.5" zindex="-1" count="160" src="/lib/canvas-nest/canvas-nest.min.js"></script><script src="/lib/jquery/index.js?v=3.4.1"></script><script src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script src="/js/utils.js?v=7.2.0"></script><script src="/js/motion.js?v=7.2.0"></script><script src="/js/schemes/muse.js?v=7.2.0"></script><script src="/js/scrollspy.js?v=7.2.0"></script><script src="/js/post-details.js?v=7.2.0"></script><script src="/js/next-boot.js?v=7.2.0"></script><script src="/js/js.cookie.js?v=7.2.0"></script><script src="/js/scroll-cookie.js?v=7.2.0"></script><script>
+</script><script color="255,255,255" opacity="0.5" zindex="-1" count="160" src="/lib/canvas-nest/canvas-nest.min.js"></script><script src="/lib/jquery/index.js?v=3.4.1"></script><script src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script src="/js/utils.js?v=7.2.0"></script><script src="/js/motion.js?v=7.2.0"></script><script src="/js/schemes/muse.js?v=7.2.0"></script><script src="/js/scrollspy.js?v=7.2.0"></script><script src="/js/post-details.js?v=7.2.0"></script><script src="/js/next-boot.js?v=7.2.0"></script><script src="/js/js.cookie.js?v=7.2.0"></script><script src="/js/scroll-cookie.js?v=7.2.0"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: true,
+    appId: 'RIz00FvgylnHzmWEx9iTsasT-gzGzoHsz',
+    appKey: 'TzKwHyKfqWKyiEa78ELOg9D9',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true,
+    lang: 'zh-cn' || 'zh-cn'
+  });
+</script><script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -395,69 +414,5 @@ show_date_time();
       if (shouldDismissSearchPopup) {
         onPopupClose();
       }
-    });
-  </script><script>
-    
-    function showTime(Counter) {
-      var entries = [];
-      var $visitors = $('.leancloud_visitors');
-
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
-        .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function ({ responseJSON }) {
-          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
-        });
-    }
-    
-
-    $(function() {
-      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'RIz00FvgylnHzmWEx9iTsasT-gzGzoHsz')
-        .done(function({ api_server }) {
-          var Counter = function(method, url, data) {
-            return $.ajax({
-              method: method,
-              url: 'https://' + api_server + '/1.1' + url,
-              headers: {
-                'X-LC-Id': 'RIz00FvgylnHzmWEx9iTsasT-gzGzoHsz',
-                'X-LC-Key': 'TzKwHyKfqWKyiEa78ELOg9D9',
-                'Content-Type': 'application/json',
-              },
-              data: data
-            });
-          };
-          
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
-          
-        });
     });
   </script><script src="https://cdn.jsdelivr.net/npm/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/poi/Pio.model.json"},"display":{"position":"left","width":150,"height":150,"hOffset":30,"vOffset":-10},"mobile":{"show":true},"react":{"opacity":1},"log":false});</script><script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html>
