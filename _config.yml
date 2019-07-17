@@ -96,13 +96,6 @@ symbols_count_time:
   total_symbols: true
   total_time: true
 
-#leancloud_counter_security:
-#  enable_sync: true
-#  app_id: RIz00FvgylnHzmWEx9iTsasT-gzGzoHsz
-#  app_key: TzKwHyKfqWKyiEa78ELOg9D9
-#  username: <<your username>> # Will be asked while deploying if is left blank
-#  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
-
 lazyload:
   enable: true
   onlypost: false #是否只在文章中开启懒加载
