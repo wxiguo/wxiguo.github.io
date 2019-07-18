@@ -3,6 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="{{ theme.android_chrome_color }}"/>
 
+<meta name="google-site-verification" content="uytOl9vmSq0YQbYHCB7a0QKHlQO7CLW2I_N7VoAzEas" />
+
 {% if theme.needmoreshare2.enable %}
   {% set needmoreshare2_css = url_for(theme.vendors._internal + '/needsharebutton/needsharebutton.css') %}
   {% if theme.vendors.needmoreshare2_css %}
@@ -116,5 +118,3 @@
     }
   };
 </script>
-
-<meta name="google-site-verification" content="uytOl9vmSq0YQbYHCB7a0QKHlQO7CLW2I_N7VoAzEas" />
