@@ -294,7 +294,7 @@ excerpt_description: true
 # Automatically Excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
+  enable: false
   length: 150
 
 # Read more button
@@ -621,7 +621,7 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 valine:
-  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
   appid: RIz00FvgylnHzmWEx9iTsasT-gzGzoHsz # Your leancloud application appid
   appkey: TzKwHyKfqWKyiEa78ELOg9D9 # Your leancloud application appkey
   notify: true # Mail notifier. See: https://github.com/xCss/Valine/wiki
@@ -641,17 +641,17 @@ livere_uid: # <your_uid>
 # Gitalk
 # Demo: https://gitalk.github.io
 gitalk:
-  enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
+  enable: true
+  github_id: wxiguo # GitHub repo owner
+  repo: blog_hexo_gitalk # Repository name to store issues
+  client_id: 2a9bb90309ee1f8760fb # GitHub Application Client ID
+  client_secret: b885efec353165c02600bf196855add755554c4d # GitHub Application Client Secret
   admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-CN
 
 
 # ---------------------------------------------------------------

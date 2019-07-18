@@ -50,7 +50,7 @@ highlight: #高亮显示
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 5
   order_by: -date
   
 # Category & Tag 分类和标签
@@ -119,6 +119,6 @@ live2d:
     hOffset: 30                            # canvas水平偏移 默认值为 0
     vOffset: -10                           # canvas竖直偏移 默认值为 -20
   mobile:
-    show: true                             # 是否在手机端显示
+    show: false                            # 是否在手机端显示
   react:
     opacity: 1.0                           # 设置模型透明度
