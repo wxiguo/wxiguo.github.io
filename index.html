@@ -79,7 +79,26 @@ show_date_time();
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
-</script><script color="255,255,255" opacity="0.5" zindex="-1" count="160" src="/lib/canvas-nest/canvas-nest.min.js"></script><script src="/lib/jquery/index.js?v=3.4.1"></script><script src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script src="/js/utils.js?v=7.2.0"></script><script src="/js/motion.js?v=7.2.0"></script><script src="/js/schemes/muse.js?v=7.2.0"></script><script src="/js/next-boot.js?v=7.2.0"></script><script src="/js/js.cookie.js?v=7.2.0"></script><script src="/js/scroll-cookie.js?v=7.2.0"></script><script>
+</script><script color="255,255,255" opacity="0.5" zindex="-1" count="160" src="/lib/canvas-nest/canvas-nest.min.js"></script><script src="/lib/jquery/index.js?v=3.4.1"></script><script src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script src="/js/utils.js?v=7.2.0"></script><script src="/js/motion.js?v=7.2.0"></script><script src="/js/schemes/muse.js?v=7.2.0"></script><script src="/js/next-boot.js?v=7.2.0"></script><script src="/js/js.cookie.js?v=7.2.0"></script><script src="/js/scroll-cookie.js?v=7.2.0"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: true,
+    appId: 'RIz00FvgylnHzmWEx9iTsasT-gzGzoHsz',
+    appKey: 'TzKwHyKfqWKyiEa78ELOg9D9',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true,
+    lang: 'zh-cn' || 'zh-cn'
+  });
+</script><script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
