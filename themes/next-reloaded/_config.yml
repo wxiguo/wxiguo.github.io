@@ -642,11 +642,11 @@ livere_uid: # <your_uid>
 # Demo: https://gitalk.github.io
 gitalk:
   enable: true
-  github_id: wxiguo # GitHub repo owner
+  github_id: wxq9375@gmail.com # GitHub repo owner
   repo: blog_hexo_gitalk # Repository name to store issues
   client_id: 2a9bb90309ee1f8760fb # GitHub Application Client ID
   client_secret: b885efec353165c02600bf196855add755554c4d # GitHub Application Client Secret
-  admin_user: wxiguo # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  admin_user: wxq9375@gmail.com # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
