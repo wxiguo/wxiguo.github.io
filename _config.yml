@@ -142,6 +142,3 @@ baidusitemap:
 sitemap:
   path: sitemap.xml
 
-# Google Webmaster tools verification setting
-# See: https://www.google.com/webmasters/
-google_site_verification: uytOl9vmSq0YQbYHCB7a0QKHlQO7CLW2I_N7VoAzEas # 此处改为google提供给你的HTML标签content后的内容
