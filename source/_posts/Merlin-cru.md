@@ -1,14 +1,15 @@
 ---
 title: 梅林固件编写cru脚本清理高速缓存重启路由
-date: 2018-04-08 13:23:10
-updated: 2018-04-24 14:20:32
 top: false
 categories:
-    - Merlin
+  - Merlin
 tags:
-    - Merlin
-    - cru
+  - Merlin
+  - cru
 description: 编写cru脚本定时清理路由高速缓存、每天重启路由
+abbrlink: e616b06d
+date: 2018-04-08 13:23:10
+updated: 2018-04-24 14:20:32
 ---
 
 ## R6300V2_梅林RT-AC68U 定时清理高速缓存、每天重启路由

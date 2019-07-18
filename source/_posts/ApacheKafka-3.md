@@ -1,16 +1,17 @@
 ---
 title: Apache kafka（三）Kafka与Spring整合
-date: 2018-05-10 22:11:21
-updated: 2019-06-28 21:52:33
 top: false
 categories:
-    - Apache Kafka
+  - Apache Kafka
 tags:
-    - Apache
-    - Kafka
-    - Java
-    - Spring
+  - Apache
+  - Kafka
+  - Java
+  - Spring
 description: Kafka与Spring整合
+abbrlink: aa51fcd
+date: 2018-05-10 22:11:21
+updated: 2019-06-28 21:52:33
 ---
 
 ### Kafka与Spring整合

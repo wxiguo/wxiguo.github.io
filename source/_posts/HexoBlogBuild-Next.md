@@ -1,14 +1,15 @@
 ---
 title: Hexo博客搭建
-date: 2018-03-28 16:33:04
-updated: 2018-03-28 16:33:04
 top: false
 categories:
-    - Hexo博客
+  - Hexo博客
 tags:
-    - Hexo
-    - Next
+  - Hexo
+  - Next
 description: hexo博客搭建及next主题设置
+abbrlink: b8f4bd70
+date: 2018-03-28 16:33:04
+updated: 2018-03-28 16:33:04
 ---
 
 ## 安装 Git

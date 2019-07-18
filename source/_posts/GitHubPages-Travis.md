@@ -1,14 +1,15 @@
 ---
 title: 使用Travis自动部署Hexo
-date: 2018-03-30 16:06:04
-updated: 2018-03-30 16:06:04
 top: false
 categories:
-    - Hexo博客
+  - Hexo博客
 tags:
-    - Hexo
-    - Travis
+  - Hexo
+  - Travis
 description: Travis持续集成自动部署Hexo
+abbrlink: e2434ddb
+date: 2018-03-30 16:06:04
+updated: 2018-03-30 16:06:04
 ---
 
 ## Travis配置

@@ -1,15 +1,16 @@
 ---
 title: Apache kafka（二）简单生产者、消费者组示例
-date: 2018-04-27 21:31:20
-updated: 2019-06-27 20:22:40
 top: false
 categories:
-    - Apache Kafka
+  - Apache Kafka
 tags:
-    - Apache
-    - Kafka
-    - Java
+  - Apache
+  - Kafka
+  - Java
 description: Kafka简单生产者、消费者组示例
+abbrlink: 970f1b95
+date: 2018-04-27 21:31:20
+updated: 2019-06-27 20:22:40
 ---
 
 ### APIS

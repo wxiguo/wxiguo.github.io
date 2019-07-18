@@ -1,14 +1,15 @@
 ---
 title: Apache kafka（一）简介及入门
-date: 2018-04-25 9:28:40
-updated: 2019-06-26 20:32:40
 top: false
 categories:
-    - Apache Kafka
+  - Apache Kafka
 tags:
-    - Apache
-    - Kafka
+  - Apache
+  - Kafka
 description: Kafka简介及入门
+abbrlink: bfbb468b
+date: 2018-04-25 09:28:40
+updated: 2019-06-26 20:32:40
 ---
 
 ### 简介

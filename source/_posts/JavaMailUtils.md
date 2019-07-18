@@ -1,15 +1,16 @@
 ---
 title: JavaMail发送邮件
-date: 2018-04-04 13:23:10
-updated: 2018-04-04 13:23:10
 top: false
 categories:
-    - Java
+  - Java
 tags:
-    - Java
-    - JavaUtils
-    - 邮件
+  - Java
+  - JavaUtils
+  - 邮件
 description: 通过JavaMail实现发送邮件
+abbrlink: a5bad747
+date: 2018-04-04 13:23:10
+updated: 2018-04-04 13:23:10
 ---
 
 ## 简介
