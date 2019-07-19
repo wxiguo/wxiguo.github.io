@@ -136,6 +136,9 @@ abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
 
+# google站点地图地址
+urlforgoogle: https://blog.xiguo.wang/
+
 # 站点地图
 baidusitemap:
   path: baidusitemap.xml
