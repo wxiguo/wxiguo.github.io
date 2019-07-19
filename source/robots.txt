@@ -13,4 +13,5 @@ Disallow: /lib/
 Disallow: /live2dw/
 
 Sitemap: https://blog.xiguo.wang/sitemap.xml
+Sitemap: https://wxiguo.github.io/sitemap.xml
 Sitemap: https://blog.xiguo.wang/baidusitemap.xml
