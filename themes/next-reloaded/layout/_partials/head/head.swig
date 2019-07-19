@@ -5,6 +5,7 @@
 
 <meta name="google-site-verification" content="uytOl9vmSq0YQbYHCB7a0QKHlQO7CLW2I_N7VoAzEas" />
 <meta name="baidu-site-verification" content="L8FV9ccIwg" />
+<meta name="msvalidate.01" content="86BA9A0D55C38FB2F283C1F802F4886C" />
 
 {% if theme.needmoreshare2.enable %}
   {% set needmoreshare2_css = url_for(theme.vendors._internal + '/needsharebutton/needsharebutton.css') %}
