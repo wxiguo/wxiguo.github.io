@@ -21,4 +21,4 @@ git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 # Github Pages
 git push --force --quiet "https://${TravisCIToken}@${GH_REF}" master:master
 # Coding Pages
-git push --force --quiet "https://wxiguo:${TravisCICodingToken}@${CO_REF}" master:master
+git push --force --quiet "https://wxiguo:${CodingTravisCIToken}@${CO_REF}" master:master
