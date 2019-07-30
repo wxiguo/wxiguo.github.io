@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.xiguo.wang/"/>
-  <updated>2019-06-28T13:52:33.000Z</updated>
+  <updated>2019-07-30T03:12:56.869Z</updated>
   <id>https://blog.xiguo.wang/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.xiguo.wang/posts/0.html"/>
+    <id>https://blog.xiguo.wang/posts/0.html</id>
+    <published>2019-07-30T03:12:56.869Z</published>
+    <updated>2019-07-30T03:12:56.869Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><h3 id="Docker-与-MUMU模拟器-Windows-10-环境切换使用"><a href="#Docker-与-MUMU模拟器-Windows-10-环境切换使用" class="headerlink" title="Docker 与 MUMU模拟器 Windows 10 环境切换使用"></a>Docker 与 MUMU模拟器 Windows 10 环境切换使用</h3><p><code>Docker</code> 在 <code>Windows 10</code> 环境使用需要开启 <code>Hyper-v</code> 虚拟化功能，与市场大部分 <code>Android</code> 模拟器依赖的 <code>HAXM</code> 冲突。可根据实际使用情况开启或关闭 <code>Hyper-v</code> 功能。</p><h4 id="Hyper-v-开启与关闭"><a href="#Hyper-v-开启与关闭" class="headerlink" title="Hyper-v 开启与关闭"></a>Hyper-v 开启与关闭</h4><p>以管理员运行 <code>CMD</code> 执行以下命令：</p><p>开启命令</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</span><br></pre></td></tr></tbody></table></figure><p>关闭命令</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V</span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3 id=&quot;Docker-与-MUMU模拟器-Windows-10-环境切换使用&quot;&gt;&lt;a href=&quot;#Docker-与-MUMU模拟器-Windows-10-环境切换使用&quot; class=&quot;headerlink&quot; title=
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Apache kafka（三）Kafka与Spring整合</title>
