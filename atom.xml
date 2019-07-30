@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.xiguo.wang/"/>
-  <updated>2019-07-30T03:14:04.000Z</updated>
+  <updated>2019-07-30T03:21:12.000Z</updated>
   <id>https://blog.xiguo.wang/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Docker 与 MUMU模拟器 Windows 10 环境切换使用</title>
-    <link href="https://blog.xiguo.wang/posts/4d8d4db6.html"/>
-    <id>https://blog.xiguo.wang/posts/4d8d4db6.html</id>
+    <title>Docker 与 MuMu模拟器 Windows 10 环境冲突</title>
+    <link href="https://blog.xiguo.wang/posts/e0a9cc56.html"/>
+    <id>https://blog.xiguo.wang/posts/e0a9cc56.html</id>
     <published>2019-07-30T03:14:04.000Z</published>
-    <updated>2019-07-30T03:14:04.000Z</updated>
+    <updated>2019-07-30T03:21:12.000Z</updated>
     
-    <content type="html"><![CDATA[<html><head></head><body><h3 id="Docker-与-MUMU模拟器-Windows-10-环境切换使用"><a href="#Docker-与-MUMU模拟器-Windows-10-环境切换使用" class="headerlink" title="Docker 与 MUMU模拟器 Windows 10 环境切换使用"></a>Docker 与 MUMU模拟器 Windows 10 环境切换使用</h3><p><code>Docker</code> 在 <code>Windows 10</code> 环境使用需要开启 <code>Hyper-v</code> 虚拟化功能，与市场大部分 <code>Android</code> 模拟器依赖的 <code>HAXM</code> 冲突。可根据实际使用情况开启或关闭 <code>Hyper-v</code> 功能。</p><h4 id="Hyper-v-开启与关闭"><a href="#Hyper-v-开启与关闭" class="headerlink" title="Hyper-v 开启与关闭"></a>Hyper-v 开启与关闭</h4><p>以管理员运行 <code>CMD</code> 执行以下命令：</p><blockquote><p>执行命令后会重启电脑</p></blockquote><p>开启命令</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</span><br></pre></td></tr></tbody></table></figure><p>关闭命令</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V</span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
+    <content type="html"><![CDATA[<html><head></head><body><h3 id="Docker-与-MuMu模拟器-Windows-10-环境切换使用"><a href="#Docker-与-MuMu模拟器-Windows-10-环境切换使用" class="headerlink" title="Docker 与 MuMu模拟器 Windows 10 环境切换使用"></a>Docker 与 MuMu模拟器 Windows 10 环境切换使用</h3><p><code>Docker</code> 在 <code>Windows 10</code> 环境使用需要开启 <code>Hyper-v</code> 虚拟化功能，与市场大部分 <code>Android</code> 模拟器依赖的 <code>HAXM</code> 冲突。可根据实际使用情况开启或关闭 <code>Hyper-v</code> 功能。</p><h4 id="Hyper-v-开启与关闭"><a href="#Hyper-v-开启与关闭" class="headerlink" title="Hyper-v 开启与关闭"></a>Hyper-v 开启与关闭</h4><p>以管理员运行 <code>CMD</code> 执行以下命令：</p><blockquote><p>执行命令后会重启电脑</p></blockquote><p>开启命令</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All</span><br></pre></td></tr></tbody></table></figure><p>关闭命令</p><figure class="highlight powershell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V</span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
     
     <summary type="html">
     
