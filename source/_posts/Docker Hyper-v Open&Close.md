@@ -1,14 +1,15 @@
 ---
 title: Docker 与 MuMu模拟器 Windows 10 环境冲突
-date: 2019-07-30 11:14:04
-updated: 2019-07-30 11:21:12
 top: false
 categories:
-    - Docker
+  - Docker
 tags:
-    - Docker
-    - Android模拟器
+  - Docker
+  - Android模拟器
 description: Docker 在 Windows 10 环境使用需要开启 Hyper-v 虚拟化功能，与市场大部分 Android 模拟器依赖的 HAXM 冲突。
+abbrlink: e0a9cc56
+date: 2019-07-30 11:14:04
+updated: 2019-07-30 11:21:12
 ---
 
 ### Docker 与 MuMu模拟器 Windows 10 环境切换使用
