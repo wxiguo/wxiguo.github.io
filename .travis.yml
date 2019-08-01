@@ -33,4 +33,4 @@ branches:
 env:
     global:
         - GH_REF: github.com/wxiguo/wxiguo.github.io.git
-        - CO_REF: e.coding.net/wxiguo/wxiguo.coding.me.git
+        - CO_REF: git.dev.tencent.com/wxiguo/wxiguo.coding.me.git
